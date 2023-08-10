@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    width: 100%;
+   
+}
+header{
+    background-color: #0096c7;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+.theme-btn{
+    position: absolute;
+    top: 0;
+    left: 95%;
+    padding: 10px;
+    margin: 27px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+}
+
+
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+.input-field input{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.input-field button{  
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #2a9134;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #2a9134;
+}
+.notes-section{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 10px; 
+    width: 100%;
+}
+.title-field{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.note-field{
+    width: 33%;
+    border-right: 2px solid black;
+    margin: 0 10px;
+    padding: 0 10px;
+    width: 33%;
+}
+.note-field button{
+
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: #e63946;
+    color: #fff;
+    border: 0;
+    margin-top: 10px;
+}
+
+.note-text{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.remove-all-field{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note-text i{
+    margin-right:10px ;
+    
+}
+
+.fa-solid{
+
+    font-size: 20px;
+}
+.fa-trash{
+    font-size: 15px;
+}
+
+.fa-moon{
+    color: goldenrod;
+}
+
+input,button{
+    font-family: inherit;
+    
+}
+*:focus{
+    outline: none;
+}
+
+@media only screen and (max-width:800px){
+
+    main, .notes-section{
+        width: 100%;
+    }
+    .title-field{
+        width: 95%;
+    }
+    .note-text{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+    .icons-field{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+       
+    }
+    .theme-btn{
+        left: 86%;
+    }
+    .fa-arrow-left, .fa-arrow-right{
+        font-size: 14px;
+    }
+    .fa-trash{
+        font-size: 10px;
+    }
+    html{
+        font-size: 15px;
+    }
+   
+}
+@media only screen and (min-width:576px) and (max-width:675px){
+
+    main, .notes-section{
+        width: 90%;
+    }
+    .notes-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title-field{
+        width: 90%;
+    }
+
+}
+@media only screen and (min-width:675px) and (max-width:800px){
+
+    main, .notes-section{
+        width: 90%;
+    }
+    .notes-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title-field{
+        width: 90%;
+    }
+    .fa-trash{
+        font-size: 14px;
+    }
+    .theme-btn{
+        left: 90%;
+    }
+   
+
+}
+@media only screen and (min-width:800px) and (max-width:950px){
+
+    .fa-arrow-left, .fa-arrow-right{
+        font-size: 15px;
+    }
+
+    .fa-trash{
+        font-size: 13px;
+    }
+    .note-text{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+    .icons-field{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+       
+    }
+    .theme-btn{
+        left: 92%;
+    }
+
+}
+@media only screen and (min-width:950px) and (max-width:1150px){
+    .theme-btn{
+        left: 94%;
+    }
+}
+@media only screen and (min-width:1000px){
+
+    .note-text{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+    .icons-field{
+        display: flex;
+        
+    }
+
+}
